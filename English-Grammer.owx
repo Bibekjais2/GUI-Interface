@@ -1,0 +1,465 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12">
+    <Prefix name="" IRI="http://www.semanticweb.org/user/ontologies/2024/11/untitled-ontology-12/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>This is the ontology of English Grammer.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Adjective"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adverb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assessment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conjunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Declarative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExampleLesson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExclamationMark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exclamatory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exercise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GrammarConcept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Imperative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interjection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interrogative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntroductoryLesson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lesson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Noun"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PartsOfSpeech"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Period"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PracticeLesson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Preposition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pronoun"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Punctuation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QuestionMark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quiz"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Score"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SentenceType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Topic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Verb"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAssessment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGrammarConcept"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLesson"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasScore"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStudent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#practicesOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#teaches"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasExample"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasQuestion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRule"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasScoreValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStudentName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Declarative_Sentence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Exercise_Verbs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Introductory_Nouns"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Noun_Concept"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Practice_Verbs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Quiz_Nouns"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Student_Alice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Student_Bob"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Verb_Concept"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Adjective"/>
+        <Class IRI="#PartsOfSpeech"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adverb"/>
+        <Class IRI="#PartsOfSpeech"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comma"/>
+        <Class IRI="#Punctuation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conjunction"/>
+        <Class IRI="#PartsOfSpeech"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Declarative"/>
+        <Class IRI="#SentenceType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExampleLesson"/>
+        <Class IRI="#Lesson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExclamationMark"/>
+        <Class IRI="#Punctuation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exclamatory"/>
+        <Class IRI="#SentenceType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exercise"/>
+        <Class IRI="#Assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Imperative"/>
+        <Class IRI="#SentenceType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interjection"/>
+        <Class IRI="#PartsOfSpeech"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interrogative"/>
+        <Class IRI="#SentenceType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntroductoryLesson"/>
+        <Class IRI="#Lesson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Noun"/>
+        <Class IRI="#PartsOfSpeech"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartsOfSpeech"/>
+        <Class IRI="#GrammarConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Period"/>
+        <Class IRI="#Punctuation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PracticeLesson"/>
+        <Class IRI="#Lesson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Preposition"/>
+        <Class IRI="#PartsOfSpeech"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pronoun"/>
+        <Class IRI="#PartsOfSpeech"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Punctuation"/>
+        <Class IRI="#GrammarConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QuestionMark"/>
+        <Class IRI="#Punctuation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quiz"/>
+        <Class IRI="#Assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SentenceType"/>
+        <Class IRI="#GrammarConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Test"/>
+        <Class IRI="#Assessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Verb"/>
+        <Class IRI="#PartsOfSpeech"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#GrammarConcept"/>
+        <NamedIndividual IRI="#Declarative_Sentence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Assessment"/>
+        <NamedIndividual IRI="#Exercise_Verbs"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lesson"/>
+        <NamedIndividual IRI="#Introductory_Nouns"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GrammarConcept"/>
+        <NamedIndividual IRI="#Noun_Concept"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lesson"/>
+        <NamedIndividual IRI="#Practice_Verbs"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Assessment"/>
+        <NamedIndividual IRI="#Quiz_Nouns"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Student_Alice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Student_Bob"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GrammarConcept"/>
+        <NamedIndividual IRI="#Verb_Concept"/>
+    </ClassAssertion>
+    <NegativeDataPropertyAssertion>
+        <DataProperty IRI="#hasExample"/>
+        <NamedIndividual IRI="#Declarative_Sentence"/>
+        <Literal>The sun rises in the east.</Literal>
+    </NegativeDataPropertyAssertion>
+    <NegativeDataPropertyAssertion>
+        <DataProperty IRI="#hasRule"/>
+        <NamedIndividual IRI="#Declarative_Sentence"/>
+        <Literal>A declarative sentence makes a statement.</Literal>
+    </NegativeDataPropertyAssertion>
+    <NegativeDataPropertyAssertion>
+        <DataProperty IRI="#hasQuestion"/>
+        <NamedIndividual IRI="#Exercise_Verbs"/>
+        <Literal>Fill in the blank with the correct verb: &apos;She ___ to the store yesterday.</Literal>
+    </NegativeDataPropertyAssertion>
+    <NegativeDataPropertyAssertion>
+        <DataProperty IRI="#hasExample"/>
+        <NamedIndividual IRI="#Noun_Concept"/>
+        <Literal>John, city, car, happiness.</Literal>
+    </NegativeDataPropertyAssertion>
+    <NegativeDataPropertyAssertion>
+        <DataProperty IRI="#hasRule"/>
+        <NamedIndividual IRI="#Noun_Concept"/>
+        <Literal>A noun is the name of a person, place, thing, or idea.</Literal>
+    </NegativeDataPropertyAssertion>
+    <NegativeDataPropertyAssertion>
+        <DataProperty IRI="#hasQuestion"/>
+        <NamedIndividual IRI="#Quiz_Nouns"/>
+        <Literal>Identify the nouns in this sentence: &apos;The dog barked loudly.</Literal>
+    </NegativeDataPropertyAssertion>
+    <NegativeDataPropertyAssertion>
+        <DataProperty IRI="#hasStudentName"/>
+        <NamedIndividual IRI="#Student_Alice"/>
+        <Literal>Alice</Literal>
+    </NegativeDataPropertyAssertion>
+    <NegativeDataPropertyAssertion>
+        <DataProperty IRI="#hasStudentName"/>
+        <NamedIndividual IRI="#Student_Bob"/>
+        <Literal>Bob</Literal>
+    </NegativeDataPropertyAssertion>
+    <NegativeDataPropertyAssertion>
+        <DataProperty IRI="#hasExample"/>
+        <NamedIndividual IRI="#Verb_Concept"/>
+        <Literal>run, is, seem.</Literal>
+    </NegativeDataPropertyAssertion>
+    <NegativeDataPropertyAssertion>
+        <DataProperty IRI="#hasRule"/>
+        <NamedIndividual IRI="#Verb_Concept"/>
+        <Literal>A verb expresses action or a state of being.</Literal>
+    </NegativeDataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAssessment"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGrammarConcept"/>
+        <Class IRI="#Topic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLesson"/>
+        <Class IRI="#Topic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasScore"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStudent"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#practicesOn"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#teaches"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAssessment"/>
+        <Class IRI="#Assessment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGrammarConcept"/>
+        <Class IRI="#GrammarConcept"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLesson"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasScore"/>
+        <Class IRI="#Score"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStudent"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#practicesOn"/>
+        <Class IRI="#Assessment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#teaches"/>
+        <Class IRI="#GrammarConcept"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasExample"/>
+        <Class IRI="#GrammarConcept"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasQuestion"/>
+        <Class IRI="#Assessment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRule"/>
+        <Class IRI="#GrammarConcept"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasScoreValue"/>
+        <Class IRI="#Score"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStudentName"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasExample"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasQuestion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRule"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasScoreValue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasStudentName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
